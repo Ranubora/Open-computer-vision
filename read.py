@@ -17,12 +17,12 @@ videos_name =  "\videos.mp4"
 # capture = cv.VideoCapture('videos/videos.mp4')
 
 # whileTrue:
-#      isTrue, frame= capture.read()
+#    isTrue, frame= capture.read()
 #     cv.imshow('videos',frame)
 #     if cv.waitKey(10) & 0xFF==ord('d'):
 #     # capture.release()
 #    #  cv.destroyAllWindows()
-#    #  cv.waitkey(0)
+cv.waitkey(0)
 
 
 #

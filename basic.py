@@ -59,24 +59,24 @@
 # cv.imshow('Eroded',Eroded)
 # cv.waitKey(0)
 
-#RESIZE A IMAGE
+# #RESIZE A IMAGE
+# import cv2 as cv
+# import os
+# path_of_photos ="C:\Opencv\photos"
+# image_name ="\lady.jpg"
+# img = cv.imread(path_of_photos+image_name)
+# cv.imshow('lady',img )
+# print(os.getcwd())
+# resized=cv.resize(img,(700,700),interpolation=cv.INTER_CUBIC)
+# cv.imshow('resized',resized)
+# cv.waitKey(0)
+
+#CROPPING A IMAGE
 import cv2 as cv
 import os
 path_of_photos ="C:\Opencv\photos"
-image_name ="\sunrise.jpg"
+image_name ="\cat.jpeg"
 img = cv.imread(path_of_photos+image_name)
-cv.imshow('sunrise',img )
-print(os.getcwd())
-resized=cv.resize(img,(700,700),interpolation=cv.INTER_CUBIC)
-cv.imshow('resized',resized)
-cv.waitKey(0)
-
-#CROPPING A IMAGE
-#import cv2 as cv
-#import os
-# path_of_photos ="C:\Opencv\photos"
-# image_name ="\cat.jpeg"
-# img = cv.imread(path_of_photos+image_name)
 # cv.imshow('cat',img )
 # print(os.getcwd())
 # Canny=cv.Canny(img,125,175)
@@ -85,11 +85,10 @@ cv.waitKey(0)
 # cv.imshow('Dilated',Dilated)
 # Eroded=cv.erode(Dilated,(3,3),iterations=1)
 # cv.imshow('Eroded',Eroded)
-# resized=cv.resize(img,(700,700),interpolation=cv.INTER_CUBIC)
-# cv.imshow('resized',resized)
-# Cropped= img[200:200,200:400]
-# cv.imshow('cropped',Cropped)
-
-# cv.waitKey(0)
+resized=cv.resize(img,(700,700),interpolation=cv.INTER_CUBIC)
+cv.imshow('resized',resized)
+Cropped = img[100:300, 200:700]
+cv.imshow('Cropped',Cropped)
+cv.waitKey(0)
 
 
